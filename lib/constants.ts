@@ -54,13 +54,13 @@ export default {
 
     HOSTED_AT: 'https://mhacks-beta.vercel.app',
 
-    // SERVER_URL: 'https://beck-six.vercel.app',
-    SERVER_URL: 'http://localhost:4000',
+    SERVER_URL: 'https://beck-six.vercel.app',
+    // SERVER_URL: 'http://localhost:4000',
 
     SPOTIFY_CONFIG: {
         clientId: "f7c02a3be86b4a47a0779eec1eac1281",
         clientSecret: "31f9ed5270b148edadd15b5d6efea510",
-        redirectUri: `http://localhost:3000/callback`, // Replace with your redirect URI
+        redirectUri: `https://mhacks4.vercel.app/callback`, // Replace with your redirect URI
         scope: 'user-read-currently-playing user-read-playback-state',
     },
 
