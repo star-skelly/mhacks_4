@@ -25,6 +25,8 @@ export default function Home() {
   const dispatch = useDispatch();
   const [profile_id, set_profile_id] = useState<string | null>(null);
 
+  const [username, setUsername] = useState<string>('');
+
   useEffect(() => {
     const authenticateUser = async () => {
       try {
@@ -87,7 +89,24 @@ export default function Home() {
     setLoading(false);
   }
 
+  if (!profile_id) {
+    return (
+      <div>
+        <input type="text" placeholder="Enter your username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <button onClick={async () => {
+          const res: Res = await api.profile.authenticate(username);
 
+          if (res.success) {
+            dispatch(setProfileId(res.data.profile._id));
+            set_profile_id(res.data.profile._id);
+            localStorage.setItem('username', username);
+          } else {
+            console.error(res.errorMessage);
+          }
+        }}>Create Profile</button>
+      </div>
+    )
+  }
 
   return (
     <>
