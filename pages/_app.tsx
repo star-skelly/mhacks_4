@@ -6,10 +6,6 @@ import { store } from "@/redux/store";
 import { Provider } from "react-redux";
 import { useEffect } from "react";
 
-app.use(cors({
-  origin: '*' // Replace with your actual origin
-}));
-
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const loadFonts = async () => {
