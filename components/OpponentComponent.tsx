@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import api from "@/lib/api";
 
 export default function OpponentComponent({ game, profile_id }: { game: Game, profile_id: string }) {
-    const number = game.profile1 === profile_id ? 2 : 1;
+    const number = game.profile1 === profile_id ? 1 : 2;
     const profile: Profile = useProfile(profile_id);
     const [progress, setProgress] = useState(0);
 
