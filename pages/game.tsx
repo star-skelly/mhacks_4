@@ -17,7 +17,7 @@ import Dropdown from "@/components/Dropdown";
 import Backdrop from "@/components/Backdrop";
 import Text from "@/components/Text";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import OpponentComponent from "@/components/OpponentComponent";
+// import OpponentComponent from "@/components/OpponentComponent";
 
 // List of categories: Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature, Popularity
 // Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness, Liveness, Valence
@@ -164,9 +164,7 @@ export default function GameScreen() {
                         justifyContent: 'center',
                         height: '256px',
                         width: '100%',
-                    }}>
-                        <OpponentComponent game={game} profile_id={game.profile1 === profile_id ? game.profile2 : game.profile1} />
-                    </div>
+                    }}>                    </div>
                 ) : (
                     <WaitingForGame game={game} />
                 )}
