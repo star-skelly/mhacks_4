@@ -1,5 +1,5 @@
 ## Demo
-[![Watch the demo](img.youtube.com/vi/70ziSQVSEqI/0.jpg)](https://www.youtube.com/watch?v=70ziSQVSEqI)
+[![Watch the demo](https://img.youtube.com/vi/70ziSQVSEqI/0.jpg)](https://www.youtube.com/watch?v=70ziSQVSEqI)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
